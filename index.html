@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Digital</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Faz o corpo ocupar a altura total da viewport */
+            background-image: url('figura-em-3D-que-representa-atendimento-por-robo-freepik-2022-digital-money-informe.jpg');
+            background-size: cover; /* Cobre todo o espaço disponível, cortando se necessário */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            overflow: hidden; /* Evita barras de rolagem se o conteúdo exceder */
+        }
+
+        /* Estilos para o Dialogflow Messenger */
+        df-messenger {
+            position: fixed; /* Fixa o elemento na tela */
+            bottom: 20px;    /* 20 pixels da parte inferior */
+            right: 20px;     /* 20 pixels da parte direita */
+            z-index: 1000;   /* Garante que esteja acima de outros elementos */
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="SuporteSMDROV"
+      agent-id="2650ae9c-e78c-4b3e-b18b-3d8a42fc4486"
+      language-code="pt-br"
+    ></df-messenger>
+
+</body>
+</html>
